@@ -26,6 +26,7 @@ node {
             echo "The sonar server could not be reached ${error}"
         }
      }
+echo "Done==========================================="
 
     stage("Image Prune"){
         imagePrune(CONTAINER_NAME)
